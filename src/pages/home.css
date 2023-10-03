@@ -1,0 +1,18 @@
+/* Home.css */
+
+/* Remove any default margin and padding on the body and HTML elements */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+/* Set the main container as a flex container */
+.main-container {
+
+  
+  display: flex;
+  flex-direction: column;
+  min-height: 80vh; /* Ensure the container takes at least the full viewport height */
+}
+

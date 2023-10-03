@@ -1,0 +1,21 @@
+/* Add this CSS to your global stylesheet or App component's CSS */
+.site {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Adjust the styles of the main content container as needed */
+.container {
+  flex: 1;
+  /* Add other styles such as padding or margins */
+}
+
+/* Styles for the footer */
+.footer {
+  /* Add styles for your footer, e.g., background color, text color, etc. */
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}

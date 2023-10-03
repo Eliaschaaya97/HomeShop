@@ -1,0 +1,9 @@
+/* Change link color to blue on hover */
+.navbar-custom .nav-link:hover {
+  color: blue !important; /* Use your desired blue color */
+}
+
+/* Change link color to white when not hovering */
+.navbar-custom .nav-link {
+  color: white !important; /* Use your desired white color */
+}
