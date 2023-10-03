@@ -18,7 +18,7 @@ export function Home() {
         children: _jsx("img", {
           src: "/images/mobile-phones.jpg",
           alt: "Mobile Phones",
-          width: "590",
+          width: "600",
           height: "350",
         }),
       }),
