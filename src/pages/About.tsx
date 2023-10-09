@@ -1,10 +1,13 @@
-
 export function About() {
   return (
     <div>
-
-<div className="about-page-image" >
-      <img src="/images/mobile-phones.jpg" alt="Mobile Phones" width="400" height="250"/>
+      <div className="about-page-image">
+        <img
+          src="/images/mobile-phones.jpg"
+          alt="Mobile Phones"
+          width="400"
+          height="250"
+        />
       </div>
       <h1>About Twins Tech</h1>
 
@@ -53,8 +56,14 @@ export function About() {
         Twins Tech is your one-stop destination for the best in mobile
         technology. Thank you for choosing us as your trusted tech partner!
       </p>
-
+     
      
     </div>
+    
   );
-}
+  // Import any necessary libraries or modules here
+
+
+  };
+  
+
