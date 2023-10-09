@@ -16,7 +16,7 @@ export function Home() {
     <div className="main-container">
       <div className="text-center">
         <img
-          src="/images/mobile-phones.png"
+          src="/HomeShop/mobile-phones.png"
           alt="Mobile Phones"
           width="590"
           height="350"

@@ -5,7 +5,7 @@ export function About() {
       _jsx("div", {
         className: "about-page-image",
         children: _jsx("img", {
-          src: "/images/mobile-phones.png",
+          src: "/HomeShop/mobile-phones.png",
           alt: "Mobile Phones",
           width: "400",
           height: "250",

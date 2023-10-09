@@ -16,7 +16,7 @@ export function Home() {
       _jsx("div", {
         className: "text-center",
         children: _jsx("img", {
-          src: "/images/mobile-phones.png",
+          src: "/HomeShop/mobile-phones.png",
           alt: "Mobile Phones",
           width: "610",
           height: "350",
