@@ -3,7 +3,7 @@ export function About() {
     <div>
       <div className="about-page-image">
         <img
-          src="/images/mobile-phones.jpg"
+          src="/images/mobile-phones.png"
           alt="Mobile Phones"
           width="400"
           height="250"
