@@ -1,16 +1,19 @@
-import { Offcanvas, Stack } from "react-bootstrap";
+import { jsx as _jsx, jsxs as _jsxs } from "react/jsx-runtime";
+import { Offcanvas, Stack, Button } from "react-bootstrap";
 import { useShoppingCart } from "../context/ShoppingCartContext";
 import { CartItem } from "./CartItem";
 import storeItems from "../data/items.json";
 import { formatCurrency } from "../utilities/formatCurrency";
 
-
-type ShoppingCartProps = {
-  isOpen: boolean;
-};
-
-export function Shoppingcart({ isOpen }: ShoppingCartProps) {
+export function Shoppingcart({ isOpen }) {
   const { closeCart, cartItems } = useShoppingCart();
+
+  const handleProceedToCheckout = () => {
+    // Add logic to handle the checkout process
+    // For now, you can simply log a message to the console
+    console.log("Proceeding to checkout:", cartItems);
+  };
+
   return (
     <Offcanvas show={isOpen} onHide={closeCart} placement="end">
       <Offcanvas.Header closeButton>
@@ -30,6 +33,12 @@ export function Shoppingcart({ isOpen }: ShoppingCartProps) {
               }, 0)
             )}
           </div>
+          <Button
+            variant="dark" // Set the button variant to dark for a black color
+            onClick={handleProceedToCheckout}
+          >
+            Proceed to Checkout
+          </Button>
         </Stack>
       </Offcanvas.Body>
     </Offcanvas>
