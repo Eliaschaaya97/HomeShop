@@ -2,15 +2,7 @@ import { jsx as _jsx, jsxs as _jsxs } from "react/jsx-runtime";
 export function About() {
   return _jsxs("div", {
     children: [
-      _jsx("div", {
-        className: "about-page-image",
-        children: _jsx("img", {
-          src: "/HomeShop/mobile-phones.png",
-          alt: "Mobile Phones",
-          width: "400",
-          height: "250",
-        }),
-      }),
+     
       _jsx("h1", { children: "About Twins Tech" }),
       _jsx("p", {
         children:

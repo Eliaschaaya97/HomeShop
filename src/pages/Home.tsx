@@ -14,14 +14,7 @@ export function Home() {
 
   return (
     <div className="main-container">
-      <div className="text-center">
-        <img
-          src="/HomeShop/mobile-phones.png"
-          alt="Mobile Phones"
-          width="590"
-          height="350"
-        />
-      </div>
+     
       <div className="home-bg">
         <Container className="home-content text-center">
           <h1 className="home-title">Welcome to Twins Tech</h1>

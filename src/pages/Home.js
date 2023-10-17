@@ -13,15 +13,7 @@ export function Home() {
   return _jsxs("div", {
     className: "main-container",
     children: [
-      _jsx("div", {
-        className: "text-center",
-        children: _jsx("img", {
-          src: "/HomeShop/mobile-phones.png",
-          alt: "Mobile Phones",
-          width: "610",
-          height: "350",
-        }),
-      }),
+     
       _jsx("div", {
         className: "home-bg",
         children: _jsxs(Container, {

@@ -3,6 +3,7 @@ import { Container, Nav, Navbar as NavbarBs } from "react-bootstrap";
 import { NavLink } from "react-router-dom";
 import { useShoppingCart } from "../context/ShoppingCartContext";
 import "./custom.css"; // Import your custom CSS file
+
 export function Navbar() {
   const { openCart, cartQuantity } = useShoppingCart();
   return _jsx(NavbarBs, {
@@ -35,6 +36,13 @@ export function Navbar() {
               to: "/about",
               className: "text-white",
               children: "About",
+            }),
+            // Add the User link
+            _jsx(Nav.Link, {
+              as: NavLink,
+              to: "/account",
+              className: "text-white",
+              children: "User",
             }),
           ],
         }),

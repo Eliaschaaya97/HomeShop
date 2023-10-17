@@ -1,14 +1,7 @@
 export function About() {
   return (
     <div>
-      <div className="about-page-image">
-        <img
-          src="/HomeShop/mobile-phones.png"
-          alt="Mobile Phones"
-          width="400"
-          height="250"
-        />
-      </div>
+      
       <h1>About Twins Tech</h1>
 
       <p>

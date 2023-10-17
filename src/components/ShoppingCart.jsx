@@ -4,6 +4,7 @@ import { useShoppingCart } from "../context/ShoppingCartContext";
 import { CartItem } from "./CartItem";
 import storeItems from "../data/items.json";
 import { formatCurrency } from "../utilities/formatCurrency";
+import { Link } from "react-router-dom";
 
 export function Shoppingcart({ isOpen }) {
   const { closeCart, cartItems } = useShoppingCart();
@@ -33,12 +34,13 @@ export function Shoppingcart({ isOpen }) {
               }, 0)
             )}
           </div>
-          <Button
-            variant="dark" // Set the button variant to dark for a black color
+          <Link to="/account">   
+          <Button 
+            variant="dark" className="w-100"// Set the button variant to dark for a black color
             onClick={handleProceedToCheckout}
           >
             Proceed to Checkout
-          </Button>
+          </Button></Link>
         </Stack>
       </Offcanvas.Body>
     </Offcanvas>
