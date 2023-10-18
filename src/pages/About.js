@@ -1,70 +1,78 @@
 import { jsx as _jsx, jsxs as _jsxs } from "react/jsx-runtime";
+
 export function About() {
   return _jsxs("div", {
     children: [
-     
-      _jsx("h1", { children: "About Twins Tech" }),
+      _jsx("h1", { children: "Welcome to Tech Shop" }),
       _jsx("p", {
         children:
-          "Welcome to Twins Tech, your premier destination for the latest mobile tech and electronics. We specialize in providing our customers with innovative devices and accessories.",
+          "Welcome to Tech Shop, your go-to destination for student-centric tech shopping. Verity Shop is designed to cater to the diverse needs of university students, providing the best prices on the market for tech essentials.",
       }),
-      _jsx("h2", { children: "Our Focus" }),
+      _jsx("h2", { children: "Our Mission" }),
       _jsx("p", {
-        children: "At Twins Tech, technology is our passion. We offer:",
+        children:
+          "At Tech Shop, our mission is to simplify and enhance the tech shopping experience for university students. We focus on:",
       }),
       _jsxs("ul", {
         children: [
           _jsx("li", {
             children:
-              "The newest smartphones from top brands like Apple, Samsung, Google",
+              "Curating the latest smartphones, laptops, tablets, and more from top brands.",
           }),
           _jsx("li", {
             children:
-              "Tablets, laptops, smartwatches, fitness trackers, and more",
+              "Offering competitive prices and exclusive deals for students.",
           }),
           _jsx("li", {
             children:
-              "Cases, chargers, cables, wireless earbuds, and all accessories",
+              "Providing a seamless online shopping experience with swift delivery.",
+          }),
+          _jsx("li", {
+            children:
+              "Supporting students through helpful customer service and technical assistance.",
           }),
         ],
       }),
-      _jsx("h2", { children: "Our Promise" }),
+      _jsx("h2", { children: "Why Tech Shop?" }),
       _jsx("p", {
-        children: "We make tech shopping effortless and enjoyable through:",
+        children:
+          "Tech Shop stands out as the preferred tech partner for university students by:",
       }),
       _jsxs("ul", {
         children: [
-          _jsx("li", { children: "Competitive prices with special deals" }),
-          _jsx("li", { children: "Swift delivery right to your door" }),
+          _jsx("li", { children: "Understanding the unique needs of students." }),
+          _jsx("li", { children: "Offering a variety of payment options." }),
           _jsx("li", {
-            children: "Helpful customer support and technical assistance",
+            children: "Providing tech solutions that fit student budgets.",
           }),
           _jsx("li", {
-            children: "An easy to navigate online shopping experience",
+            children:
+              "Creating a community where students can find the best tech deals.",
           }),
         ],
       }),
-      _jsx("h2", { children: "Supporting Your Tech Life" }),
+      _jsx("h2", { children: "Supporting Your Student Tech Life" }),
       _jsx("p", {
-        children: "We support the full lifecycle for our customers:",
+        children:
+          "Tech Shop supports every aspect of your student tech life:",
       }),
       _jsxs("ul", {
         children: [
           _jsx("li", {
-            children: "Find the perfect devices and accessories for your needs",
+            children: "Discovering the perfect devices and accessories for your studies.",
           }),
           _jsx("li", {
-            children: "Seamless online ordering or visit our stores",
+            children: "Effortless online ordering or visit our student-friendly stores.",
           }),
-          _jsx("li", { children: "Setup assistance and protection plans" }),
-          _jsx("li", { children: "Trade-ins and upgrades for your used gear" }),
-          _jsx("li", { children: "Repairs done quickly by our technicians" }),
+          _jsx("li", { children: "Setup assistance, protection plans, and tech advice." }),
+          _jsx("li", { children: "Trade-ins and upgrades to keep up with your evolving needs." }),
+          _jsx("li", { children: "Quick repairs by our expert technicians." }),
         ],
       }),
       _jsx("p", {
         children:
-          "Twins Tech is your one-stop destination for the best in mobile technology. Thank you for choosing us as your trusted tech partner!",
+          "Tech Shop is committed to being your trusted tech partner throughout your university journey. Thank you for choosing us!",
       }),
     ],
   });
-};
+}

@@ -14,7 +14,7 @@ export function Navbar() {
           as: NavLink,
           to: "/HomeShop",
           className: "text-white",
-          children: "Twins Tech",
+          children: "Tech Shop",
         }),
         _jsxs(Nav, {
           className: "me-auto",

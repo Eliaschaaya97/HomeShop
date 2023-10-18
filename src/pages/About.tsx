@@ -1,62 +1,59 @@
+
+
 export function About() {
   return (
-    <div>
-      
-      <h1>About Twins Tech</h1>
+    <div className="about-container">
+      <h1 className="about-heading">Welcome to Tech Shop</h1>
 
-      <p>
-        Welcome to Twins Tech, your premier destination for the latest mobile
-        tech and electronics. We specialize in providing our customers with
-        innovative devices and accessories.
+      <p className="about-text">
+       Tech Shop is your ultimate destination for cutting-edge mobile
+        technology and electronics. We specialize in delivering innovative
+        devices and accessories to our customers.
       </p>
 
-      <h2>Our Focus</h2>
+      <h2 className="about-subheading">Our Commitment</h2>
 
-      <p>At Twins Tech, technology is our passion. We offer:</p>
+      <p className="about-text">
+        At Tech Shop, our commitment revolves around providing an exceptional
+        tech shopping experience. We focus on:
+      </p>
 
-      <ul>
-        <li>
-          The newest smartphones from top brands like Apple, Samsung, Google
-        </li>
+      <ul className="about-list">
+        <li>The latest smartphones from leading brands like Apple, Samsung, Google</li>
         <li>Tablets, laptops, smartwatches, fitness trackers, and more</li>
-        <li>Cases, chargers, cables, wireless earbuds, and all accessories</li>
+        <li>Comprehensive accessories including cases, chargers, cables, and wireless earbuds</li>
       </ul>
 
-      <h2>Our Promise</h2>
+      <h2 className="about-subheading">What Sets Us Apart</h2>
 
-      <p>We make tech shopping effortless and enjoyable through:</p>
-
-      <ul>
-        <li>Competitive prices with special deals</li>
-        <li>Swift delivery right to your door</li>
-        <li>Helpful customer support and technical assistance</li>
-        <li>An easy to navigate online shopping experience</li>
-      </ul>
-
-      <h2>Supporting Your Tech Life</h2>
-
-      <p>We support the full lifecycle for our customers:</p>
-
-      <ul>
-        <li>Find the perfect devices and accessories for your needs</li>
-        <li>Seamless online ordering or visit our stores</li>
-        <li>Setup assistance and protection plans</li>
-        <li>Trade-ins and upgrades for your used gear</li>
-        <li>Repairs done quickly by our technicians</li>
-      </ul>
-
-      <p>
-        Twins Tech is your one-stop destination for the best in mobile
-        technology. Thank you for choosing us as your trusted tech partner!
+      <p className="about-text">
+        Tech Shop stands out by making tech shopping effortless and enjoyable:
       </p>
-     
-     
+
+      <ul className="about-list">
+        <li>Competitive prices with exclusive deals</li>
+        <li>Swift and reliable delivery to your doorstep</li>
+        <li>Responsive customer support and technical assistance</li>
+        <li>An intuitive and user-friendly online shopping experience</li>
+      </ul>
+
+      <h2 className="about-subheading">Empowering Your Tech Journey</h2>
+
+      <p className="about-text">
+        We empower your tech life through a complete support cycle:
+      </p>
+
+      <ul className="about-list">
+        <li>Discover the perfect devices and accessories tailored to your needs</li>
+        <li>Seamless online ordering or visit our student-friendly stores</li>
+        <li>Setup assistance, protection plans, and tech advice</li>
+        <li>Trade-ins and upgrades to adapt to your evolving requirements</li>
+        <li>Swift and expert repairs by our skilled technicians</li>
+      </ul>
+
+      <p className="about-text">
+        Tech Shop is dedicated to being your trusted tech partner throughout your university journey. Thank you for choosing us!
+      </p>
     </div>
-    
   );
-  // Import any necessary libraries or modules here
-
-
-  };
-  
-
+}
