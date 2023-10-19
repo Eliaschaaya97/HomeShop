@@ -12,7 +12,7 @@ export function Navbar() {
       children: [
         _jsx(NavbarBs.Brand, {
           as: NavLink,
-          to: "/HomeShop",
+          to: "/",
           className: "text-white",
           children: "Tech Shop",
         }),
@@ -21,7 +21,7 @@ export function Navbar() {
           children: [
             _jsx(Nav.Link, {
               as: NavLink,
-              to: "/HomeShop",
+              to: "/",
               className: "text-white",
               children: "Home",
             }),

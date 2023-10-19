@@ -21,7 +21,7 @@ function App() {
           className: "mb-4",
           children: _jsxs(Routes, {
             children: [
-              _jsx(Route, { path: "/HomeShop", element: _jsx(Home, {}) }),
+              _jsx(Route, { path: "/", element: _jsx(Home, {}) }),
               _jsx(Route, { path: "/store", element: _jsx(Store, {}) }),
               _jsx(Route, { path: "/about", element: _jsx(About, {}) }),
               _jsx(Route, { path: "/account", element: _jsx(AccountPage, {}) }),
