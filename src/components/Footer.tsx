@@ -4,7 +4,7 @@ function Footer() {
   return (
     <footer className="bg-dark text-white text-center py-3">
       <div className="container">
-        <p>&copy; {new Date().getFullYear()} Twins Tech</p>
+        <p>&copy; {new Date().getFullYear()} Tech Shop</p>
         <div className="d-flex justify-content-center">
           <ul className="list-inline">
             <li className="list-inline-item">
