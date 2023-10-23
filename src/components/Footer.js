@@ -19,8 +19,9 @@ function Footer() {
             children: [
               _jsx("li", {
                 className: "list-inline-item",
+               
                 children: _jsx("a", {
-                  href: "/contact",
+                    href: "https://liu.edu.lb/NewLIU2022/",
                   children: "Contact Us",
                 }),
               }),
@@ -31,27 +32,22 @@ function Footer() {
               }),
               _jsx("li", { className: "list-inline-item", children: "|" }),
               // ... Other links
-              _jsx("li", {
-                className: "list-inline-item",
-                children: _jsxs("a", {
-                  href: "#",
-                  children: [
-                    _jsx(FontAwesomeIcon, { icon: faInstagram }),
-                    " Instagram",
-                  ],
-                }),
+              _jsxs("a", {
+                href: "https://www.instagram.com/lebintuni/?hl=en", // Updated Instagram URL
+                children: [
+                  _jsx(FontAwesomeIcon, { icon: faInstagram  }),
+                  " Instagram ",
+                ],
               }),
-              _jsx("li", { className: "list-inline-item", children: "|" }),
-              _jsx("li", {
-                className: "list-inline-item",
-                children: _jsxs("a", {
-                  href: "#",
-                  children: [
-                    _jsx(FontAwesomeIcon, { icon: faFacebook }),
-                    " Facebook",
-                  ],
-                }),
+              _jsx("li", { className: "list-inline-item", children: " |" }),
+              _jsxs("a", {
+                href: "https://www.facebook.com/lebintuni/", // Updated Facebook URL
+                children: [
+                  _jsx(FontAwesomeIcon, { icon: faFacebook }),
+                  " Facebook",
+                ],
               }),
+              
             ],
           }),
         }),
