@@ -3,15 +3,15 @@ import { jsx as _jsx, jsxs as _jsxs } from "react/jsx-runtime";
 export function About() {
   return _jsxs("div", {
     children: [
-      _jsx("h1", { children: "Welcome to Tech Shop" }),
+      _jsx("h1", { children: "Welcome to UNI Shop" }),
       _jsx("p", {
         children:
-          "Welcome to Tech Shop, your go-to destination for student-centric tech shopping. Verity Shop is designed to cater to the diverse needs of university students, providing the best prices on the market for tech essentials.",
+          "Welcome to UNI Shop, your go-to destination for student-centric tech shopping. Verity Shop is designed to cater to the diverse needs of university students, providing the best prices on the market for tech essentials.",
       }),
       _jsx("h2", { children: "Our Mission" }),
       _jsx("p", {
         children:
-          "At Tech Shop, our mission is to simplify and enhance the tech shopping experience for university students. We focus on:",
+          "At UNI Shop, our mission is to simplify and enhance the tech shopping experience for university students. We focus on:",
       }),
       _jsxs("ul", {
         children: [
@@ -23,20 +23,17 @@ export function About() {
             children:
               "Offering competitive prices and exclusive deals for students.",
           }),
-          _jsx("li", {
-            children:
-              "Providing a seamless online shopping experience with swift delivery.",
-          }),
+         
           _jsx("li", {
             children:
               "Supporting students through helpful customer service and technical assistance.",
           }),
         ],
       }),
-      _jsx("h2", { children: "Why Tech Shop?" }),
+      _jsx("h2", { children: "Why UNI Shop?" }),
       _jsx("p", {
         children:
-          "Tech Shop stands out as the preferred tech partner for university students by:",
+          "UNI Shop stands out as the preferred tech partner for university students by:",
       }),
       _jsxs("ul", {
         children: [
@@ -54,7 +51,7 @@ export function About() {
       _jsx("h2", { children: "Supporting Your Student Tech Life" }),
       _jsx("p", {
         children:
-          "Tech Shop supports every aspect of your student tech life:",
+          "UNI Shop supports every aspect of your student tech life:",
       }),
       _jsxs("ul", {
         children: [
@@ -69,9 +66,9 @@ export function About() {
           _jsx("li", { children: "Quick repairs by our expert technicians." }),
         ],
       }),
-      _jsx("p", {
+      _jsx("h5", {
         children:
-          "Tech Shop is committed to being your trusted tech partner throughout your university journey. Thank you for choosing us!",
+          "UNI Shop is committed to being your trusted tech partner throughout your university journey. Thank you for choosing us!",
       }),
     ],
   });

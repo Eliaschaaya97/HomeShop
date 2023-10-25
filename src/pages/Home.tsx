@@ -14,10 +14,9 @@ export function Home() {
 
   return (
     <div className="main-container">
-     
       <div className="home-bg">
         <Container className="home-content text-center">
-          <h1 className="home-title">Welcome to Tech Shop</h1>
+          <h1 className="home-title">Welcome to UNI Shop</h1>
           <p className="home-description">
             Explore our cutting-edge technology products and start shopping
             today!

@@ -10,7 +10,7 @@ export function Navbar() {
       <Container>
         {/* Add the Twins Tech name */}
         <NavbarBs.Brand as={NavLink} to="/" className="text-white">
-          Twins Tech
+          UNI Shop
         </NavbarBs.Brand>
         {/* End Twins Tech name */}
         <Nav className="me-auto">

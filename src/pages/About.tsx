@@ -3,10 +3,10 @@
 export function About() {
   return (
     <div className="about-container">
-      <h1 className="about-heading">Welcome to Tech Shop</h1>
+      <h1 className="about-heading">Welcome to UNI Shop</h1>
 
       <p className="about-text">
-       Tech Shop is your ultimate destination for cutting-edge mobile
+       UNI Shop is your ultimate destination for cutting-edge mobile
         technology and electronics. We specialize in delivering innovative
         devices and accessories to our customers.
       </p>
@@ -14,7 +14,7 @@ export function About() {
       <h2 className="about-subheading">Our Commitment</h2>
 
       <p className="about-text">
-        At Tech Shop, our commitment revolves around providing an exceptional
+        At UNI Shop, our commitment revolves around providing an exceptional
         tech shopping experience. We focus on:
       </p>
 
@@ -27,7 +27,7 @@ export function About() {
       <h2 className="about-subheading">What Sets Us Apart</h2>
 
       <p className="about-text">
-        Tech Shop stands out by making tech shopping effortless and enjoyable:
+        UNI Shop stands out by making tech shopping effortless and enjoyable:
       </p>
 
       <ul className="about-list">
@@ -52,7 +52,7 @@ export function About() {
       </ul>
 
       <p className="about-text">
-        Tech Shop is dedicated to being your trusted tech partner throughout your university journey. Thank you for choosing us!
+        UNI Shop is dedicated to being your trusted tech partner throughout your university journey. Thank you for choosing us!
       </p>
     </div>
   );

@@ -10,7 +10,7 @@ function Footer() {
       className: "container",
       children: [
         _jsxs("p", {
-          children: ["\u00A9 ", new Date().getFullYear(), " Tech Shop"],
+          children: ["\u00A9 ", new Date().getFullYear(), " UNI Shop"],
         }),
         _jsx("div", {
           className: "d-flex justify-content-center",

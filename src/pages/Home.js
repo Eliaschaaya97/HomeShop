@@ -21,7 +21,7 @@ export function Home() {
           children: [
             _jsx("h1", {
               className: "home-title",
-              children: "Welcome to Tech Shop",
+              children: "Welcome to UNI Shop",
             }),
             _jsx("p", {
               className: "home-description",
