@@ -27,9 +27,9 @@ export function Navbar() {
           </Nav.Link>
 
           {/* Add the User link */}
-          <Nav.Link as={NavLink} to="/account" className="text-white">
+          {/* <Nav.Link as={NavLink} to="/account" className="text-white">
             User
-          </Nav.Link>
+          </Nav.Link> */}
         </Nav>
         {cartQuantity > 0 && (
           <button
