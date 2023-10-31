@@ -37,13 +37,8 @@ export function Navbar() {
               className: "text-white",
               children: "About",
             }),
-            // Add the User link
-            // _jsx(Nav.Link, {
-            //   as: NavLink,
-            //   to: "/account",
-            //   className: "text-white",
-            //   children: "User",
-            // }),
+            
+          
           ],
         }),
         cartQuantity > 0 &&
