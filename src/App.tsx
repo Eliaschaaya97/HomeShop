@@ -1,5 +1,3 @@
-// App.tsx
-
 import { HashRouter as Routes, Route } from "react-router-dom";
 import { Container } from "react-bootstrap";
 import { Home } from "./pages/Home";
@@ -9,6 +7,9 @@ import { Navbar } from "./components/Navbar";
 import { ShoppingcartProvider } from "./context/ShoppingCartContext";
 import Footer from "./components/Footer";
 import AccountPage from "./pages/AccountPage";
+// Import the Dashboard component correctly
+
+
 
 function App() {
   return (
@@ -21,6 +22,8 @@ function App() {
             <Route path="/store" element={<Store />} />
             <Route path="/about" element={<About />} />
             <Route path="/account" element={<AccountPage />} />
+            {/* Add the Route for the Dashboard component */}
+           
           </Routes>
         </Container>
         <Footer />

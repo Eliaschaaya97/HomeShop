@@ -1,52 +1,81 @@
+
 import './style1.css';
 import{useState} from 'react';
+import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
-function AccountPage(){
-  const[name,setName]=useState('');
-  const[mobile,setMobile]=useState('');
-  const[email,setEmail]=useState('');
 
-  const handleSubmit =() =>{
-    if(name.length===0){
-      alert("Name has left blank!");
+
+const Register=()=>{
+  let history=useNavigate();
+  const[data,setData]=useState({
+    name:"",
+    lname:"",
+    Uni:"",
+    mobile:"",
+    email:"",
+    address1:"",
+    address2:"",
+
+
+  })
+ 
+  
+
+  const handleChange =(e: { target: { name: any; value: any; }; }) =>{
+    setData({...data,[e.target.name]:e.target.value});}
+
+    const submitForm=(e: { preventDefault: () => void; })=>{
+
+      e.preventDefault();
+       const sendData = {
+        name:data.name,
+        lname:data.lname,
+        Uni:data.Uni,
+        mobile:data.mobile,
+        email:data.email,
+        address1:data.address1,
+        address2:data.address2,
+
+
+      }
+      console.log(sendData);
+      axios.post('http://localhost:8080/php-react/insert.php'
+      ,sendData)
+      .then((result: { data: { Status: string; }; })=>{
+        if(result.data.Status == 'invalid'){
+          alert('invalid user');}
+          else {
+            history('/dashboard');
+          }
+        
+      
+      })
     }
-   else if(mobile.length===0){
-      alert("Mobile has left blank!");
-    }
-    else if(email.length===0){
-      alert("Email has left blank!");
-    }
-    else {
-      const url ="hhtp://localhost/enquiry.php"
-      let fData =new FormData();
-      fData.append('name',name);
-      fData.append('mobile',mobile);
-      fData.append('email',email);
 
-      axios.post(url,fData)
-      .then(response=>alert(response.data))
-      .catch(error=>alert(error));
+    return(
+      <div className="container1">
+        <form onSubmit={submitForm} className="container1">
+      <label >Name:</label>
+      <input type="text" name="name"   onChange={handleChange} value={data.name}/>
+      <label >Last Name</label>
+      <input type="text"  name="lname"   onChange={handleChange} value={data.lname}/>
+      <label >Univeristy Name:</label>
+      <input type="text"  name="Uni"   onChange={handleChange} value={data.Uni}/>
+      <label >Mobile</label>
+      <input type="text"  name="mobile"   onChange={handleChange} value={data.mobile}/>
+      <label>Email:</label>
+      <input type="text" name="email"   onChange={handleChange} value={data.email}/>
+      <label >Address 1:</label>
+     
+      <input type="text" name="address1"   onChange={handleChange} value={data.address1}/>
+      <label >Address 2:</label>
+     
+      <input type="text" name="address2"  onChange={handleChange} value={data.address2}/>
 
-
-    }
-
-    
-  }
-
-  return (
-
-    <>
-    <div className="container1">
-      <label htmlFor="name">Name:</label>
-      <input type="text" name="name" id="name" value={name} onChange={(e)=>setName(e.target.value)}/>
-      <label htmlFor="mobile">Mobile:</label>
-      <input type="text"  name="mobile" id="mobile"  value={mobile} onChange={(e)=>setMobile(e.target.value)}/>
-      <label htmlFor="email">Email:</label>
-      <input type="text" name="email" id="email"  value={email} onChange={(e)=>setEmail(e.target.value)}/>
-      <input type="button" name="send" id="send" value="Send" onClick={handleSubmit}/>
+      <input type="submit" name="send" id="send" value="Send" />
+      </form>
       
     </div>
-    </>
-  );
-}
-export default AccountPage;
+    
+  )}
+   export default Register;

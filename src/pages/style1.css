@@ -1,6 +1,7 @@
 .container1{
+  
   position: absolute;
-  top: 45%;
+  top: 47%;
   left: 50%;
 
   transform: translate(-50%,-50%);
@@ -8,30 +9,44 @@
   flex-direction: column;
   align-items: baseline;
   justify-content: center;
-  padding: 100px;
+  padding: 10px;
   box-shadow: rgb(245, 198, 198) 0px 5px 15px;
   border-radius: 20px; ;
 }
 label{
 font-weight: bolder;
-  font-size: 16px;
-  margin-bottom:10px ;
+  font-size: 15px;
+  margin-bottom:5px ;
 }
 input[type=text]{
   border: 1px solide black;
   width: 350px;
-  height: 39px;
+  height: 38px;
   outline: none;
   padding-left: 10px;
   padding-right: 10px;
-  margin-bottom:20px ;
+  margin-bottom:10px ;
   font-size: 15px;
   font-weight: 400;
   border-radius: 5px;
 
 
 }
-input[type=button]{
+input[type=number]{
+  border: 1px solide black;
+  width: 350px;
+  height: 38px;
+  outline: none;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-bottom:10px ;
+  font-size: 15px;
+  font-weight: 400;
+  border-radius: 5px;
+
+
+}
+input[type=submit]{
   border: 1px solide black;
  
   height: 40px;
