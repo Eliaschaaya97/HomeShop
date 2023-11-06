@@ -63,7 +63,7 @@ const Register=()=>{
       <input type="text"  name="Uni"   onChange={handleChange} value={data.Uni}/>
       <label >Mobile</label>
       <input type="text"  name="mobile"   onChange={handleChange} value={data.mobile}/>
-      <label>Email:</label>
+      <label>Email For University:</label>
       <input type="text" name="email"   onChange={handleChange} value={data.email}/>
       <label >Address 1:</label>
      
