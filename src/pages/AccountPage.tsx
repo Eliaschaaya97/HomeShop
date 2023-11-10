@@ -32,17 +32,15 @@ const Register = () => {
     };
     console.log(sendData);
     axios
-    .post("http://localhost:8080/php-react/insert.php", sendData, { withCredentials: true })
-    .then((result: { data: { Status: string } }) => {
-      if (result.data.Status === "invalid") {
-        alert("Invalid user");
-      } else {
-        history("/home");
-      }
-    })
-    .catch((error) => {
-      console.error("Axios error:", error);
-    });}
+      .post("http://localhost:8080/php-react/insert.php", sendData)
+      .then((result: { data: { Status: string } }) => {
+        if (result.data.Status == "invalid") {
+          alert("invalid user");
+        } else {
+          history("/home");
+        }
+      });
+  };
 
   return (
     <div className="container1">
