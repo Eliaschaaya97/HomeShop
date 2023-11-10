@@ -47,7 +47,7 @@ export function Navbar() {
           to: "/",
           className: "text-white",
           children: "Logout",
-          style: {  marginRight: "15px"},
+          style: {  marginRight: "16px"},
         }),
       
         cartQuantity > 0 &&
