@@ -25,15 +25,33 @@ export function Shoppingcart({ isOpen }) {
           {cartItems.map((item) => (
             <CartItem key={item.id} {...item} />
           ))}
-          <div className="ms-auto fw-bold fs-5">
-            Total:{" "}
-            {formatCurrency(
-              cartItems.reduce((total, cartItem) => {
-                const item = storeItems.find((i) => i.id === cartItem.id);
-                return total + (item?.price || 0) * cartItem.quantity;
-              }, 0)
-            )}
-          </div>
+       
+       <div className="ms-auto fw-bold fs-5">
+  Total:{" "}
+  {formatCurrency(
+    cartItems.reduce((total, cartItem) => {
+      const item = storeItems.find((i) => i.id === cartItem.id);
+      const itemPrice = item?.price || 0;
+      
+      const discountedPrice = itemPrice * cartItem.quantity ; // Apply 20% discount (80% of the original price)
+      return total + discountedPrice;
+    }, 0)
+  )}
+</div>
+<div className="ms-auto fw-bold fs-5">
+  Total With 10% Discount:{" "}
+  {formatCurrency(
+    cartItems.reduce((total, cartItem) => {
+      const item = storeItems.find((i) => i.id === cartItem.id);
+      const itemPrice = item?.price || 0;
+      
+      const discountedPrice = itemPrice * cartItem.quantity * 0.9; 
+      return total + discountedPrice;
+    }, 0)
+  )}
+</div>
+
+
           <Link to="/account">   
           <Button 
             variant="dark" className="w-100"// Set the button variant to dark for a black color

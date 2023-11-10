@@ -6,13 +6,14 @@ import "./custom.css"; // Import your custom CSS file
 
 export function Navbar() {
   const { openCart, cartQuantity } = useShoppingCart();
+
   return _jsx(NavbarBs, {
     className: "bg-dark -sm mb-3 navbar-custom",
     children: _jsxs(Container, {
       children: [
         _jsx(NavbarBs.Brand, {
           as: NavLink,
-          to: "/",
+          to: "/Home",
           className: "text-white",
           children: "UNI Shop",
         }),
@@ -21,7 +22,7 @@ export function Navbar() {
           children: [
             _jsx(Nav.Link, {
               as: NavLink,
-              to: "/",
+              to: "/Home",
               className: "text-white",
               children: "Home",
             }),
@@ -37,10 +38,18 @@ export function Navbar() {
               className: "text-white",
               children: "About",
             }),
-            
+       
           
           ],
         }),
+        _jsx(Nav.Link, {
+          as: NavLink,
+          to: "/",
+          className: "text-white",
+          children: "Logout",
+          style: {  marginRight: "15px"},
+        }),
+      
         cartQuantity > 0 &&
           _jsxs("button", {
             onClick: openCart,

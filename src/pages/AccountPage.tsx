@@ -45,7 +45,7 @@ const Register=()=>{
         if(result.data.Status == 'invalid'){
           alert('invalid user');}
           else {
-            history('/');
+            history('/home');
           }
         
       

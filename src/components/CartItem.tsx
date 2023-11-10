@@ -38,7 +38,10 @@ export function CartItem({ id, quantity }: CartItemProps) {
           {formatCurrency(item.price)}
         </div>
       </div>
-      <div> {formatCurrency(item.price * quantity)}</div>
+      <div> {formatCurrency(item.price * quantity)}</div> 
+   
+  
+
       <Button
         variant="outline-danger"
         size="sm"

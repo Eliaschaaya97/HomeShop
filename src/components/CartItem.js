@@ -40,6 +40,8 @@ export function CartItem({ id, quantity }) {
         ],
       }),
       _jsxs("div", { children: [" ", formatCurrency(item.price * quantity)] }),
+
+
       _jsx(Button, {
         variant: "outline-danger",
         size: "sm",
