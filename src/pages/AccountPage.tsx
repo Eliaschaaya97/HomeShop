@@ -97,7 +97,7 @@ const Register = () => {
           value={data.address2}
         />
 
-        <input type="submit" name="send" id="send" value="Send" />
+        <input type="submit" name="send" id="send" value=" send" />
       </form>
     </div>
   );

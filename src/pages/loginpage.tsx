@@ -57,7 +57,7 @@ const Login = () => {
         <label>Password:</label>
         <input type="password" name="password" onChange={handleChange} value={data.password} />
         
-        <input type="submit" name="send" id="send" value="Send" />
+        <input type="submit" name="send" id="send" value="login" />
 
         {/* Link to the registration page */}
         <p>
