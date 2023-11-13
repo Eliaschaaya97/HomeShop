@@ -27,7 +27,7 @@ const Login = () => {
     console.log(sendData);
 
     // Replace the URL with your login endpoint
-    axios.post('http://localhost:8080/php-react/login.php', sendData)
+    axios.post('https://eliaschaaya97.github.io/phpreact/', sendData,{ withCredentials: true })
       .then((result) => {
         if (result.data.Status === 'invalid') {
           alert('Invalid login credentials');

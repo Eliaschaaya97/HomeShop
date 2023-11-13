@@ -32,7 +32,7 @@ const Register = () => {
     };
     console.log(sendData);
     axios
-      .post("http://localhost:8080/php-react/insert.php", sendData)
+      .post("https://eliaschaaya97.github.io/phpreact/", sendData)
       .then((result: { data: { Status: string } }) => {
         if (result.data.Status == "invalid") {
           alert("invalid user");
