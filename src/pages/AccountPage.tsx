@@ -31,8 +31,8 @@ const Register = () => {
       address2: data.address2,
     };
     console.log(sendData);
-    axios
-      .post("https://eliaschaaya97.github.io/phpreact/", sendData)
+    axios.post("https://eliaschaaya97.github.io/phpreact/", sendData)
+
       .then((result: { data: { Status: string } }) => {
         if (result.data.Status == "invalid") {
           alert("invalid user");
