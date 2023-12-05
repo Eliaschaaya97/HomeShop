@@ -54,7 +54,7 @@ export function Navbar() {
           _jsxs("button", {
             onClick: openCart,
             className:
-              "btn btn-primary rounded-circle  justify-content-center align-items-center",
+              "btn btn-light rounded-4  justify-content-center align-items-center",
             style: { width: "3rem", height: "3rem" },
             children: [
               _jsx("svg", {
@@ -66,11 +66,11 @@ export function Navbar() {
               }),
               _jsx("div", {
                 className:
-                  "rounded-circle bg-danger d-flex justify-content-center align-items-center",
+                  "rounded-circle bg-primary d-flex justify-content-center align-items-center",
                 style: {
                   color: "white",
-                  width: "1.3rem",
-                  height: "1.3rem",
+                  width: "1.6rem",
+                  height: "1.6rem",
                   bottom: 0,
                   right: 0,
                   transform: "translate(25%,25%)",
