@@ -52,7 +52,7 @@ export function Shoppingcart({ isOpen }) {
 </div>
 
 
-          <Link to="/account">   
+          <Link to="/Payment">   
           <Button 
             variant="dark" className="w-100"// Set the button variant to dark for a black color
             onClick={handleProceedToCheckout}

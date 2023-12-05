@@ -8,11 +8,11 @@ const Register = () => {
   const [data, setData] = useState({
     name: "",
     lname: "",
-    Uni: "",
+   password: "",
     mobile: "",
     email: "",
-    address1: "",
-    address2: "",
+   uni: "",
+    address: "",
   });
 
   const handleChange = (e: { target: { name: any; value: any } }) => {
@@ -21,18 +21,31 @@ const Register = () => {
 
   const submitForm = (e: { preventDefault: () => void }) => {
     e.preventDefault();
+    if (
+      data.name === "" ||
+      data.lname === "" ||
+      data.password === "" ||
+      data.mobile === "" ||
+      data.email === "" ||
+      data.uni === "" ||
+      data.address === ""
+    ) {
+      alert("Please fill in all fields");
+      return; // Stop the form submission if any field is empty
+    }
+  
     const sendData = {
       name: data.name,
       lname: data.lname,
-      Uni: data.Uni,
+      password: data.password,
       mobile: data.mobile,
       email: data.email,
-      address1: data.address1,
-      address2: data.address2,
+      uni: data.uni,
+      address: data.address,
     };
     console.log(sendData);
-    axios.post("https://eliaschaaya97.github.io/phpreact/", sendData)
-
+    axios
+      .post("http://localhost:8080/php-react/insert.php", sendData)
       .then((result: { data: { Status: string } }) => {
         if (result.data.Status == "invalid") {
           alert("invalid user");
@@ -45,59 +58,68 @@ const Register = () => {
   return (
     <div className="container1">
       <form onSubmit={submitForm} className="container1">
-        <label>Name:</label>
+        <label>Name :</label>
         <input
           type="text"
           name="name"
+          placeholder="Name"
           onChange={handleChange}
           value={data.name}
         />
-        <label>Last Name</label>
+        <label>Last Name :</label>
         <input
           type="text"
           name="lname"
+          placeholder="LastName"
           onChange={handleChange}
           value={data.lname}
         />
-        <label>Univeristy Name:</label>
+        <label>password</label>
         <input
           type="text"
-          name="Uni"
+          name="password"
+          placeholder="****"
           onChange={handleChange}
-          value={data.Uni}
+          value={data.password}
         />
-        <label>Mobile</label>
+        <label>Mobile :</label>
         <input
           type="text"
           name="mobile"
+          placeholder="+96171717171"
           onChange={handleChange}
           value={data.mobile}
         />
-        <label>Email For University:</label>
+        <label>Email For University :</label>
         <input
           type="text"
           name="email"
+       
+          placeholder="id@students.UniName.edu.lb"
+
           onChange={handleChange}
           value={data.email}
         />
-        <label>Address 1:</label>
+        <label>Univeristy Name :</label>
 
         <input
           type="text"
-          name="address1"
+          name="uni"
+          placeholder="University Name"
           onChange={handleChange}
-          value={data.address1}
+          value={data.uni}
         />
-        <label>Address 2:</label>
+        <label>Address :</label>
 
         <input
           type="text"
-          name="address2"
+          name="address"
+          placeholder="Lebanon jal el dib"
           onChange={handleChange}
-          value={data.address2}
+          value={data.address}
         />
 
-        <input type="submit" name="send" id="send" value=" send" />
+        <input type="submit" name="send" id="send" value="create acount" />
       </form>
     </div>
   );

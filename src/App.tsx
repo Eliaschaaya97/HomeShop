@@ -8,7 +8,8 @@ import "./App.css";
 import { ShoppingcartProvider } from "./context/ShoppingCartContext";
 import Footer from "./components/Footer";
 import AccountPage from "./pages/AccountPage";
-import Loginpage from "./pages/loginpage";
+
+
 
 
 // Import the Dashboard component correctly
@@ -22,7 +23,7 @@ function App() {
         <Navbar />
         <Container className="mb-4">
           <Routes>
-            <Route path="/" element={<Loginpage />} />
+            
             <Route path="/Account" element={<AccountPage />} />
             <Route path="/store" element={<Store />} />
             <Route path="/about" element={<About />} />

@@ -4,10 +4,11 @@ import { Container } from "react-bootstrap";
 import { Home } from "./pages/Home";
 import { Store } from "./pages/Store";
 import { About } from "./pages/About";
+import Payment from "./pages/Payment";
 import { Navbar } from "./components/Navbar";
 import { Navbar1 } from "./components/Navbar1";
 import AccountPage from "./pages/AccountPage";
-import Loginpage from "./pages/loginpage";
+import LoginPage from "./pages/loginpage";
 import { ShoppingcartProvider } from "./context/ShoppingCartContext";
 import Footer from "./components/Footer";
 import "./App.css";
@@ -22,26 +23,22 @@ function App() {
             path="/"
             element={
               <>
-              <Navbar1 />
-              <Container className="mb-4">
-                <Loginpage />
-              </Container>
-            </>
-
-
+                <Navbar1 />
+                <Container className="mb-4">
+                  <LoginPage />
+                </Container>
+              </>
             }
           />
-             <Route
+          <Route
             path="/Account"
             element={
               <>
-              <Navbar1 />
-              <Container className="mb-4">
-                <AccountPage />
-              </Container>
-            </>
-
-
+                <Navbar1 />
+                <Container className="mb-4">
+                  <AccountPage />
+                </Container>
+              </>
             }
           />
           <Route
@@ -73,6 +70,17 @@ function App() {
                 <Navbar />
                 <Container className="mb-4">
                   <Home />
+                </Container>
+              </>
+            }
+          />
+          <Route
+            path="/Payment"
+            element={
+              <>
+                <Navbar />
+                <Container className="mb-4">
+                  <Payment />
                 </Container>
               </>
             }
