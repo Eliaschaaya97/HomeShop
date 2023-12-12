@@ -1,26 +1,31 @@
 import "./style1.css";
+import bcrypt from "bcryptjs";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
 
 const Register = () => {
   let history = useNavigate();
+
   const [data, setData] = useState({
     name: "",
     lname: "",
-   password: "",
+    password: "",
     mobile: "",
     email: "",
-   uni: "",
+    uni: "",
     address: "",
   });
 
-  const handleChange = (e: { target: { name: any; value: any } }) => {
+  const [error, setError] = useState("");
+
+  const handleChange = (e: { target: { name: any; value: any; }; }) => {
     setData({ ...data, [e.target.name]: e.target.value });
   };
 
-  const submitForm = (e: { preventDefault: () => void }) => {
+  const submitForm = (e: { preventDefault: () => void; }) => {
     e.preventDefault();
+
     if (
       data.name === "" ||
       data.lname === "" ||
@@ -30,34 +35,40 @@ const Register = () => {
       data.uni === "" ||
       data.address === ""
     ) {
-      alert("Please fill in all fields");
+      setError("Please fill in all fields");
       return; // Stop the form submission if any field is empty
     }
-  
+
+    const hashedPassword = bcrypt.hashSync(data.password, 10);
+
     const sendData = {
       name: data.name,
       lname: data.lname,
-      password: data.password,
+      password: hashedPassword, // Send the hashed password
       mobile: data.mobile,
       email: data.email,
       uni: data.uni,
       address: data.address,
     };
-    console.log(sendData);
-    axios
-      .post("http://localhost:8080/php-react/insert.php", sendData)
-      .then((result: { data: { Status: string } }) => {
-        if (result.data.Status == "invalid") {
-          alert("invalid user");
-        } else {
-          history("/home");
-        }
-      });
+
+    axios.post("http://localhost:8080/php-react/insert.php", sendData)
+    .then((result) => {
+      if (result.data.Status === "invalid") {
+        setError("Invalid user");
+      } else {
+        history("/home");
+      }
+    })
+    .catch((error) => {
+      console.error("Error in axios request:", error);
+      // Add more specific error handling if needed
+    });
   };
 
   return (
     <div className="container1">
       <form onSubmit={submitForm} className="container1">
+        {error && <div className="error">{error}</div>}
         <label>Name :</label>
         <input
           type="text"
@@ -74,9 +85,9 @@ const Register = () => {
           onChange={handleChange}
           value={data.lname}
         />
-        <label>password</label>
+        <label>Password</label>
         <input
-          type="text"
+          type="password" // Change input type to password
           name="password"
           placeholder="****"
           onChange={handleChange}
@@ -94,14 +105,11 @@ const Register = () => {
         <input
           type="text"
           name="email"
-       
           placeholder="id@students.UniName.edu.lb"
-
           onChange={handleChange}
           value={data.email}
         />
-        <label>Univeristy Name :</label>
-
+        <label>University Name :</label>
         <input
           type="text"
           name="uni"
@@ -110,7 +118,6 @@ const Register = () => {
           value={data.uni}
         />
         <label>Address :</label>
-
         <input
           type="text"
           name="address"
@@ -119,9 +126,10 @@ const Register = () => {
           value={data.address}
         />
 
-        <input type="submit" name="send" id="send" value="create acount" />
+        <input type="submit" name="send" id="send" value="create account" />
       </form>
     </div>
   );
 };
+
 export default Register;
