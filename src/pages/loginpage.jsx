@@ -41,7 +41,7 @@ const LoginPage = () => {
 
   const loginSubmit = () => {
     if (email !== "" && password !== "") {
-      const url = "http://localhost:8080/php-react/login.php";
+      const url = "https://unishopphp.000webhostapp.com/login.php";
       const headers = {
         Accept: "application/json",
         "Content-type": "application/json",

@@ -51,7 +51,7 @@ const Register = () => {
       address: data.address,
     };
 
-    axios.post("http://localhost:8080/php-react/insert.php", sendData)
+    axios.post("https://unishopphp.000webhostapp.com/index.php", sendData)
     .then((result) => {
       if (result.data.Status === "invalid") {
         setError("Invalid user");
